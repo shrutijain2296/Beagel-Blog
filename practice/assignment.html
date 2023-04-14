@@ -16,118 +16,127 @@
 </head>
 
 <body>
+    <!-- navbar section -->
     <nav>
         <ul style = "list-style-type: none;">
             <li><a href = "https://en.wikipedia.org/wiki/Home" target = "_">Home</a></li>
-            <li><a href = "https://course.acciojob.com/" target = "_">About</a></li>
+            <li><a href = "https://course.acciojob.com/" target = "_">About Me</a></li>
             <li><a href = "https://www.pexels.com/search/contact/" target = "_">Contact</a></li>
         </ul>
     </nav><br><br>
 
-    <section>
-        <h2 align = "center" style="color: black"> About Me </h2><br><br>
-        <p style="color: red;">My name is Shruti Jain. I basically belong to Vidisha, Madhya Pradesh.<br>
-        I am graduated in Computer Science Engineering and also an MBA graduate in Marketing & operations.<br>
-        I have worked in Byjus'for 1 year 7 months in sales & marketingc department.<br>
-        I have done my summer Internship from LG Electronics Pvt. Ltd.<br>
-        My Hobby is learning new things, exploring new places and playing badminton.  
-        </p>
-    </section><br><br>
+        <!-- main section -->
+        <main>
+            <section>
+                <h2 align = "center" style="color: black"> About Me </h2><br><br>
+                <p style="color: red;">My name is Shruti Jain. I basically belong to Vidisha, Madhya Pradesh.<br>
+                I am graduated in Computer Science Engineering and also an MBA graduate in Marketing & operations.<br>
+                I have worked in Byjus'for 1 year 7 months in sales & marketingc department.<br>
+                I have done my summer Internship from LG Electronics Pvt. Ltd.<br>
+                My Hobby is learning new things, exploring new places and playing badminton.  
+                </p>
+            </section><br><br>
+        
+            <section>
+                <form>
+                    <h2 align = "center" style="color: black"> Contact Me </h2>
+                    <div>
+                        <label for = "name">Name:</label><br>
+                        <input type = "text" id = "name" required placeholder = "Enter your name"><br><br>
+                    </div>
+        
+                    <div>
+                        <label for = "tel">Phone Number:</label><br>
+                        <input type = "tel" id = "tel" required placeholder = "Phone number" maxlength = "10"><br><br>
+                    </div>
+        
+                    <div>
+                        <label for = "date">Date of Appointment:</label><br>
+                        <input type = "date" id = "date" required><br><br>
+                    </div>
+        
+                    <div>
+                        <label for = "contact">Contact via:</label><br>
+                        Whatsapp:<input type = "radio" name = "contact" required>
+                        Call:<input type = "radio" name = "contact" required>
+                    </div>
+                    <br>
+                    <br>
+                    <div> 
+                        <label for = "time slot">Time slot:</label><br>
+                        <label for = "11-12">11AM - 12PM</label>
+                        <input type = "checkbox">
 
-    <section>
-        <form>
-            <h2 align = "center" style="color: black"> Contact Me </h2>
-            <div>
-                <label for = "name">Name:</label><br>
-                <input type = "text" id = "name" required placeholder = "Enter your name"><br><br>
-            </div>
+                        <label for = "12-1">12PM - 1PM</label>
+                        <input type = "checkbox">
 
-            <div>
-                <label for = "tel">Phone Number:</label><br>
-                <input type = "tel" id = "tel" required placeholder = "Phone number" maxlength = "10"><br><br>
-            </div>
-
-            <div>
-                <label for = "date">Date of Appointment:</label><br>
-                <input type = "date" id = "date" required><br><br>
-            </div>
-
-            <div>
-                <label for = "contact">Contact via:</label><br>
-                Whatsapp:<input type = "radio" name = "contact" required>
-                Call:<input type = "radio" name = "contact" required>
-            </div>
+                        <label for = "1-2">1PM - 2PM</label>
+                        <input type = "checkbox">
+        
+                        </select><br><br>
+                    </div>
+        
+                    <div>
+                        <label for = "">Message:</label><br>
+                        <textarea name = "text" cols = "30" rows = "10"></textarea><br><br>
+                    </div>
+        
+                    <div>
+                        <button type = "submit">Submit</button>
+                        <button type = "reset">Reset</button>
+                    </div>
+                </form>
+            </section><br><br><br>
+        
+            <section>
+                <table align = "center">
+                    <h2 align = "center" style="color: black">Projects</h2>
+                    <thead>
+                        <tr  style = "color:rgb(27, 80, 115)">
+                            <th align = "center"> S.No. </th>
+                            <th align = "center"> Name of Project </th>
+                            <th align = "center" style="width:60%"> Description </th>
+                            <th align = "center" style="width:20%"> Link </th>
+                        </tr>
+                    </thead>
+                    <tbody style="color: red;">
+                        <tr>
+                            <td align = "center">1.</td>
+                            <td align = "center">Snake Game</td>
+                            <td align = "center">A simple snake game made using Java Swing and awt</td>
+                            <td align = "center"><a href = "https://github.com/shrutijain2296/Snake-Game" target = "_">Snake Game</a></td>
+                        </tr>
+        
+                        <tr>
+                            <td align = "center">2.</td>
+                            <td align = "center">Technical Discussion Forum</td>
+                            <td align = "center">An online discussion website where student can discuss technical topics in the form of post and message</td>
+                            <td align = "center"><a href = "https://geek.digit.in/community/" target = "_"> Technical Discussion Forum </a></td>
+                        </tr>
+        
+                        <tr>
+                            <td align = "center">3.</td>
+                            <td align = "center">Currency Converter</td>
+                            <td align = "center">It is used to convert a currency from one to another</td>
+                            <td align = "center"><a href = "https://projectworlds.in/java-projects-with-source-code/currency-converter-java-mini-project/" target = "_"> Currency ConverterS </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <br>
-            <br>
-            <div> 
-                <label for = "time slot">Time slot:</label><br>
-                <select id = "time slot" required >
-                    <option value = "" disabled>--Please select the time slot--</option>
-                    <option value = "11:00 AM">11:00 AM</option>
-                    <option value = "12:00 PM">12:00 PM</option>
-                    <option value = "01:00 PM">01:00 PM</option>
+            <br><br>
+            
+        </main>
 
-                </select><br><br>
-            </div>
+        <section align = "center">
+            <footer>
+                <h3 style="color: black">You can also Connect with me on:</h3>
+                <a href = "shrutijain2296@gmail.com" target = "_">Gmail</a>
+                <a href = "https://www.linkedin.com/in/shrutijain2296/" target = "_">LinkedIn</a>
+                <a href = "https://github.com/shrutijain2296" target = "_">Github</a>
+            </footer>
+        </section>
 
-            <div>
-                <label for = "">Message:</label><br>
-                <textarea name = "text" cols = "30" rows = "10"></textarea><br><br>
-            </div>
-
-            <div>
-                <button type = "submit">Submit</button>
-                <button type = "reset">Reset</button>
-            </div>
-        </form>
-    </section><br><br><br>
-
-    <section>
-        <table align = "center">
-            <h2 align = "center" style="color: black">Projects</h2>
-            <thead>
-                <tr  style = "color:rgb(27, 80, 115)">
-                    <th align = "center"> S.No. </th>
-                    <th align = "center"> Name of Project </th>
-                    <th align = "center" style="width:60%"> Description </th>
-                    <th align = "center" style="width:20%"> Link </th>
-                </tr>
-            </thead>
-            <tbody style="color: red;">
-                <tr>
-                    <td align = "center">1.</td>
-                    <td align = "center">Snake Game</td>
-                    <td align = "center">A simple snake game made using Java Swing and awt</td>
-                    <td align = "center"><a href = "https://github.com/shrutijain2296/Snake-Game" target = "_">Snake Game</a></td>
-                </tr>
-
-                <tr>
-                    <td align = "center">2.</td>
-                    <td align = "center">Technical Discussion Forum</td>
-                    <td align = "center">An online discussion website where student can discuss technical topics in the form of post and message</td>
-                    <td align = "center"><a href = "https://geek.digit.in/community/" target = "_"> Technical Discussion Forum </a></td>
-                </tr>
-
-                <tr>
-                    <td align = "center">3.</td>
-                    <td align = "center">Currency Converter</td>
-                    <td align = "center">It is used to convert a currency from one to another</td>
-                    <td align = "center"><a href = "https://projectworlds.in/java-projects-with-source-code/currency-converter-java-mini-project/" target = "_"> Currency ConverterS </a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <br>
-    <br><br>
-
-    <section align = "center">
-        <footer>
-            <h3 style="color: black">You can also Connect with me on:</h3>
-            <a href = "shrutijain2296@gmail.com" target = "_">Gmail</a>
-            <a href = "https://www.linkedin.com/in/shrutijain2296/" target = "_">LinkedIn</a>
-            <a href = "https://github.com/shrutijain2296" target = "_">Github</a>
-        </footer>
-    </section>
     
 </body>
 </html>
