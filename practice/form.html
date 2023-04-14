@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> forms in HTML </title>
+</head>
+<body>
+    <form autocomplete = "off">
+        <h4> General Details </h4>
+
+        <div>
+            <label for = "username">Username: </label></div><br>
+            <input type = "text" name = "username" placeholder = "enter a username" value = "shrutijain" disabled><br><br>
+        </div>
+
+        <div>
+            <label for = "fullname">Full Name: </label><br>
+            <input type = "text" name = "fname" size = "10" maxlength = "10" required><br><br>
+        </div>
+
+        <div>
+            <label for = "email"> Email: </label><br>
+            <input type = "email" name = "email" placeholder = abc@gmail.com ><br><br>
+        </div>
+
+        <div>
+            <label for = "password"> Password: </label><br>
+            <input type = "password" name = "password" maxlength = "10"><br><br>
+        </div>
+
+        <div>
+            <label for = "phone number">Phone number: </label><br>
+            <input type = "tel" name = "number" maxlength = "10" pattern = "^[789]\d{9}$S"><br><br>
+        </div>
+
+        <div>
+            <label for = "gender"> Gender: </label><br>
+            Male:<input type = "radio" name = "gender"><br>
+            female:<input type = "radio" name = "gender"><br><br>
+        </div>
+
+        <div>
+            <!-- create dropdown -->
+            <label for = "subject"> Choose a Subject: </label>
+            <select name = "subject" id = "sub">
+                <option value = "html"> html </option>
+                <option value = "css"> css </option>
+                <option value = "js"> js </option></br></br>
+            </select>
+            
+        </div>
+
+        <br>
+            
+        <div>
+            <input type = "datetime-local"></br><br>
+             
+        </div>
+
+        <div>
+            <input type = "file"><br><br>
+        </div>
+
+        <!-- <div>
+            <input type = "color">
+            <input type = "range">
+        </div> -->
+
+        <div>
+            <label for = ""> Address :</label><br>
+            <textarea name = "text" id = "" cols = "30" rows = "10"></textarea><br><br>           
+        </div>
+        
+        <div>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Reset" disabled>
+        </div>
+
+
+    </form>
+    
+</body>
+</html>
